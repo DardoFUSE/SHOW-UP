@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Login Form | CodingNepal</title>
+  <link rel="stylesheet" href="cuenta.css">
+  <link rel="stylesheet" href="Navbar.css">
+  <link rel="shortcut icon" href="imagenes/be (4).png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+  <header>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="imagenes/be (6).png" alt="FitLife Logo" class="logo">
+        </a>
+        <!-- Botón de menú hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="Producto.html">Producto</a></li>
+            <li><a href="Soporte.html">Soporte</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="dashusuario.html">Cuenta</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br><br>
+
+
+
+        <div class="centrar">
+        <div class="wrapper">
+          <form action="#">
+            <h2>Login</h2>
+              <div class="input-field">
+              <input type="text" required>
+              <label>Ingresa tu E-mail</label>
+            </div>
+            <div class="input-field">
+              <input type="password" required>
+              <label>Ingresa tu Contraseña</label>
+            </div>
+            <div class="forget">
+              <label for="remember">
+                <input type="checkbox" id="remember">
+                <p>Remember me</p>
+              </label>
+              <a href="#">Olvide mi contraseña</a>
+            </div>
+            <button type="submit">Iniciar Sesion</button>
+            <div class="register">
+              <p>No tenes una cuenta? <a class="registrar" href="crear-cuenta.html">Crear Cuenta</a></p>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+  
+      menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active'); // Activa/desactiva el menú
+      });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="shortcut icon" href="imagenes/be (4).png" type="image/x-icon">
+    <script src="nosotros.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="imagenes/be (6).png" alt="FitLife Logo" class="logo">
+            </a>
+            <!-- Botón de menú hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Soporte.html">Soporte</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="dashusuario.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="quesomos">
+    
+        <div class="container1">
+            <div class="izquierda"><img src="imagenes/¿Quienes somos.png" alt=""></div>
+    
+            <div class="derecha">
+                <h1>¿Quiénes somos?</h1>
+                <h4>En ShowUp, transformamos la manera en que las instituciones gestionan sus procesos. Creemos en la tecnología como herramienta para optimizar tareas, ahorrar tiempo y permitir que las personas se concentren en lo importante.</h4>
+
+<h4>Nuestra misión es simplificar lo cotidiano. Con herramientas como Attend, llevamos la automatización al siguiente nivel, eliminando tareas repetitivas como la toma de asistencia manual y facilitando el trabajo diario.</h4>
+
+<h6>Más que tecnología, somos aliados en la evolución de tu institución.</h6>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-content">
+                <h3>Constanza Baudoin</h3>
+                <p>Diseñadora</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Ezequiel Cagnotti</h3>
+                <p>Programador</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Tomas Sanchez</h3>
+                <p>Programador</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Francisco Tula</h3>
+                <p>Contador</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Santiago Berti</h3>
+                <p>Desarrollo de Aplicación</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Activa/desactiva el menú
+        });
+    </script>
+    
+</body>
+</html>

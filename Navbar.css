@@ -1,0 +1,108 @@
+/* Estilos de la navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 100; /* Siempre encima */
+    background-color: #242424; /* Fondo general */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Logo de la navbar */
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+/* Enlaces de navegación en pantallas grandes */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    background-color: #1B1B1B; /* Fondo del óvalo */
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding-right: 30px;
+    margin-left: 50px;
+    border: 2px solid #5e5e5e;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 850;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #167bffe3;
+    transition: 0.5s;
+}
+
+/* Menú hamburguesa (solo en móvil) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilos para la barra de navegación en pantallas móviles */
+@media (max-width: 768px) {
+    /* Mostrar el botón hamburguesa y posicionarlo a la derecha */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        z-index: 200;
+    }
+
+    /* Configuración del menú desplegable */
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: #1B1B1B;
+        width: 100%;
+        height: auto;
+        display: none; /* Oculto por defecto */
+        border-radius: 0;
+        padding: 1rem 0;
+        margin: 0;
+        border: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        padding: 1rem;
+        border-bottom: 1px solid #5e5e5e;
+    }
+
+    .nav-links a:hover {
+        color: #167bffe3;
+    }
+}

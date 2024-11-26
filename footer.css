@@ -1,0 +1,169 @@
+footer {
+    background-color: #111111;
+    color: white;
+    margin-top: -5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    padding: 0px 20px 20px 20px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+/* Estilos para los iconos */
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los iconos según tu preferencia */
+    height: 30px; /* Ajusta el tamaño de los iconos según tu preferencia */
+}
+
+/* Estilos para los iconos */
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    margin-left: 10px;
+    font-size: 25px; /* Tamaño de los iconos */
+}
+
+footer p {
+    color: #7E7E7E;
+}
+
+.box2 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.anuncioss2 {
+    display: flex;
+    justify-content: center;
+}
+
+.anuncios2 {
+    display: flex;
+    justify-self: center;
+    width: 95%;
+    height: 400px;
+    align-items: center;
+    background-image: url(anuncio2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hrr {
+    color: gray;
+}
+
+.final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding: 10px;
+}
+
+.parteuno {
+    font-size: 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: baseline;
+}
+
+.parteuno p {
+    margin-left: 20px;
+}
+
+.partedos {
+    float: left;
+    font-size: 10px;
+}
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;  /* Apilar elementos en vertical en móvil */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    .boxes {
+        flex-direction: column; /* Apilar las cajas verticalmente */
+        width: 100%; /* Hacer las cajas más anchas */
+    }
+
+    .box {
+        width: 100%; /* Ancho completo */
+        margin-bottom: 15px; /* Espacio entre las cajas */
+        padding: 0;
+    }
+
+    .box h2 {
+        margin-right: 0; /* Quitar margen a la derecha */
+        margin-left: 0;  /* Alinear título a la izquierda */
+    }
+
+    .social-icons {
+        flex-direction: column;  /* Apilar los iconos en vertical */
+        align-items: flex-start;  /* Alinear los iconos a la izquierda */
+    }
+
+    .social-icons a {
+        margin-left: 0;  /* Alinear los iconos a la izquierda */
+        margin-bottom: 10px; /* Espacio entre iconos */
+    }
+
+    .box2 {
+        width: 100%; /* Ancho completo */
+        margin-left: 0; /* Eliminar margen izquierdo */
+    }
+
+    .final {
+        flex-direction: column; /* Apilar los elementos de la parte final */
+        align-items: flex-start; /* Alinear el texto a la izquierda */
+    }
+
+    .parteuno {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px; /* Ajustar tamaño de fuente para móviles */
+        margin-left: 0; /* Alinear el texto a la izquierda */
+    }
+    .partedos {
+        font-size: 12px; /* Ajustar tamaño de fuente para móviles */
+        margin-left: 0; /* Alinear el texto a la izquierda */
+    }
+
+    .parteuno p, .partedos p {
+        margin-left: 0; /* Eliminar márgenes laterales */
+    }
+}

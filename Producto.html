@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="imagenes/be (4).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="imagenes/be (6).png" alt="FitLife Logo" class="logo">
+            </a>
+            <!-- Botón de menú hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Soporte.html">Soporte</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="dashusuario.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <hr>
+        <section class="product">
+            <div class="product-img">
+                <div class="imgdetalle">
+                    <img src="imagenes/producto.jpg" alt="" class="thumbnail">
+                    <img src="imagenes/producto1.jpg" alt="" class="thumbnail">
+                </div>
+                <img id="imgprincipal" src="imagenes/producto.jpg" alt="Imagen principal">
+            </div>
+
+            <div class="product-details">
+                <div class="verticales">
+                    <div class="vertical-linea"></div>
+                    <div class="vertical-linea2"></div>
+                </div>
+
+                <div class="details-content">
+                    <h1 class="black">Attend</h1>
+                    <div class="pricing">
+                        <p class="special-price">$119.999</p>
+                        <h2 class="list-price">Precio de lista: <s>$120.000</s></h2>
+                        <h3>Llévalo en hasta <strong>12 Cuotas al mejor precio</strong>!!!</h3>
+                    </div>
+
+                    <div class="payment-options">
+                        <form>
+                            <select id="opciones" name="opciones">
+                                <option value="opcion1">$119.999 en un pago</option>
+                                <option value="opcion2">3 cuotas sin interés de $45.000 c/u</option>
+                                <option value="opcion3">12 cuotas de $13.000 c/u</option>
+                            </select>
+                            <button class="buy-button">Comprar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="features">
+            <h1 class="black2">Características</h1>
+            <div class="features-grid">
+                <div>
+                    <h3>Reconocimiento Facial</h3>
+                    <p>Interfaz de Reconocimiento: <strong>Sí</strong></p>
+                    <p>Registro e Ingreso de personas: <strong>Sí</strong></p>
+                </div>
+                <div>
+                    <h3>Conectividad</h3>
+                    <p>Wi-Fi: <strong>Sí</strong></p>
+                    <p>Base de Datos: <strong> Sí</strong></p>
+                </div>
+                <div>
+                    <h3>Planilla de personas registradas</h3>
+                    <p>Planilla dividida: <strong>Sí</strong></p>
+                    <p>Planilla Interactiva: <strong>Sí</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          
+          <div class="boxes">
+            <div class="box">
+              <h2>BUSCAR TIENDA</h2>
+            </div>
+            <div class="box">
+              <h2>AYUDA</h2>
+              <p>Envios y entregas</p>
+              <p>Devoluciones</p>
+              <p>Cambios</p>
+              <p>Autogestionar mi devolucion</p>
+              <p>Opciones de pago</p>
+              <p>Contactate</p>
+                <p>Defensa al consumidor</p>
+                <p>Libro de quejas online</p>
+                <h4>Boton de Arrepentimiento</h4>
+            </div>
+            <div class="box">
+              <h2>ACERCA DE SHOW UP</h2>
+              <p>Noticias</p>
+              <p>Inversionistas</p>
+              <p>Sustentibilidad</p>
+            </div>
+            <div class="box">
+              
+              <h2>NOVEDADES DE SHOW UP</h2>
+              <p>Nuevos productos</p>
+              <p>Attend</p>
+              <p>Tips</p>
+              <p>Promociones</p>
+            
+            </div>
+            <div class="box2">
+              <div class="social-iconss">
+              </div>
+            
+            </div>
+          </div>
+         
+        </div>
+      
+      
+      
+      <section class="final">
+
+        <div class="parteuno">
+
+          <h3>Argentina</h3>
+          <p class="derechos">© 2024 Show Up. Todos los derechos reservados.</p>
+
+        </div>
+
+        <div class="partedos">
+
+          <p>
+            Términos y Condiciones
+            Política de privacidad y cookies</p>
+
+        </div>
+
+
+      </section>
+      
+      </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Activa/desactiva el menú
+        });
+    </script>
+</body>
+</html>

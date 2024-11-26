@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="shortcut icon" href="imagenes/be (4).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="imagenes/be (6).png" alt="FitLife Logo" class="logo">
+            </a>
+            <!-- Botón de menú hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Soporte.html">Soporte</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="dashusuario.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+     
+     <body>
+         <div class="container">
+             <h1>ENCONTRÁ LA INFORMACIÓN QUE NECESITÁS PARA LA INSTALACIÓN Y USO DEL PRODUCTO</h1>
+             <div class="content">
+                <div class="elpepe">
+                 <div class="description-box">
+                     <p> 1. Instalación:  Asegúrese de contar con un sistema compatible, conexión a Internet y herramientas como pip o npm para instalar librerías. Verifique que el software funcione correctamente antes de usarlo.
+                        <br>
+                        2. Pantalla Principal:
+                        
+                        Registrar: Captura datos e imagen facial de los estudiantes para futuros reconocimientos.
+                        Ingresar: Utiliza reconocimiento facial para registrar la entrada del estudiante.
+                       <br>
+                        3. ESP32: Conecta el software con dispositivos físicos (como LEDs). Configure Wi-Fi y pruebe la conexión con comandos simples.
+                        <br>
+                        4. Indicadores LED:
+                        
+                        Verde: Acceso autorizado.
+                        Rojo: Acceso denegado, el estudiante no está registrado.
+                      <br>
+                        5. Wi-Fi: Una conexión estable es esencial para sincronizar con la base de datos y servicios.
+                        <br>
+                        6. Administración: Gestione, edite, elimine o visualice datos de estudiantes desde la interfaz.
+                        <br>
+                        7. Recomendaciones: Mantenga el software y los dispositivos actualizados; consulte soporte técnico en caso de problemas.</p>
+                 <br>
+                 
+                    </div>
+                </div>
+                 <div class="manual-box">
+                     <h2>MANUAL DE USO</h2>
+                     <div class="pdf-icon">
+                         <a href="https://docs.google.com/document/d/1_p8aAkHaSZIB7DuzXEIvUfzN-JWqQUruQJolNIJ-9hI/edit?usp=sharing" download="" ><img class="imagen" src="imagenes/PEDEFE.png" alt=""></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </body>
+     </html>
+     
+
+
+
+
+
+
+
+
+     <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Activa/desactiva el menú
+        });
+    </script>
+
+
+
+
+
+
+     
+</html>
